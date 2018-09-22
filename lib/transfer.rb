@@ -8,8 +8,9 @@ class Transfer
     @amount = amount
 end
 
-def valid?(sender, receiver)
+def valid?
   
+
 end
 
 def execute_transaction
