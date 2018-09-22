@@ -10,6 +10,7 @@ end
 
 def valid?
   @sender.valid? && @receiver.valid?
+  true
 
 end
 
