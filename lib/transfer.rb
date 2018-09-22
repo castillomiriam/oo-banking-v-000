@@ -14,7 +14,7 @@ def valid?
 else
   false
 end
-end
+
 
 def execute_transaction
 end
