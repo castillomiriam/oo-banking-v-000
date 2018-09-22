@@ -31,6 +31,8 @@ def execute_transaction
 
 
 def reverse_transfer
+  if @status == "complete"
+    @status = "reverse"
 end
 
 end
