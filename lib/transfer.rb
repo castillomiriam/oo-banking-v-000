@@ -14,6 +14,7 @@ end
 
 def execute_transaction
   if sender.balance < amount
+    @status = "rejected"
 
   else
 
