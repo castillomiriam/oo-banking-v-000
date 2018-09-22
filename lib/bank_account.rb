@@ -18,7 +18,10 @@ end
 
 def valid?
   if balance <0
-    then valid
+    then true
+  else 
+    balance >O
+    then false
 end
 
 def close_account
