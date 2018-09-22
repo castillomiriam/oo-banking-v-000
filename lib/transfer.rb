@@ -17,7 +17,7 @@ def execute_transaction
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
   elsif status == "complete"
-    puts "This transaction was already executed"
+    puts "This transaction was already executed."
 
   else
 
