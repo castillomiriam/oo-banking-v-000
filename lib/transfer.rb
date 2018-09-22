@@ -31,9 +31,9 @@ def execute_transaction
 
 
 def reverse_transfer
-  if @status == "complete" || @status == "rejected"
-      @sender.balance += @amount
-      @receiver.balance -= @amount
+  if @status == "complete"
+      @sender.balance += amount
+      @receiver.balance -= amount
       @status = "reversed"
     end
   end
