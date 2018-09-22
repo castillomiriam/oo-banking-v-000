@@ -1,3 +1,3 @@
 class Transfer
-  attr_accessor :sender
+  attr_accessor :sender, :receiver
 end
