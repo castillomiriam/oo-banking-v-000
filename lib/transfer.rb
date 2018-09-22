@@ -13,20 +13,20 @@ def valid?
 end
 
 def execute_transaction
-   
-   if sender.balance < amount 
+
+   if sender.balance < amount
      @status = "rejected"
      "Transaction rejected. Please check your account balance."
    elsif status == "complete"
      puts "This transaction was already executed."
- 
-   else 
+
+   else
       @receiver.balance += amount
       @sender.balance -= amount
       @status = "complete"
-    end 
-   
-   
+    end
+
+
  end 
 
 
