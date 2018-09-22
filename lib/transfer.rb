@@ -20,7 +20,7 @@ def execute_transaction
     puts "This transaction was already executed."
 
   else
-
+if @status == "complete"
   end
 end
 
