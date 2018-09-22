@@ -23,6 +23,8 @@ def execute_transaction
 if @status == "complete"
   @status = "reverse"
   @amount = -(amount)
+  self.execute_transaction
+  @status = "reversed"
   end
 end
 
