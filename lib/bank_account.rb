@@ -17,7 +17,7 @@ def display_balance
 end
 
 def valid?
-  if balance
+  if balance <0 && 
 
 def close_account
 end
