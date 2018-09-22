@@ -17,4 +17,7 @@ end
 def  valid?
 end
 
+def close_account
+end
+
 end
