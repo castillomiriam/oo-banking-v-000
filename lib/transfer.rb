@@ -11,6 +11,7 @@ end
 def valid?
   @sender.valid? && @receiver.valid?
   true
+else
 
 end
 
