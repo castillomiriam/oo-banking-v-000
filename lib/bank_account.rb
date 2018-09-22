@@ -14,6 +14,7 @@ end
 def display_balance
 end
 
-def  valid
+def  valid?
 end
+
 end
