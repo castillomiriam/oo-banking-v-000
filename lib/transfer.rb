@@ -21,6 +21,8 @@ def execute_transaction
 
   else
 if @status == "complete"
+  @status = "reverse"
+  @amount = -(amount)
   end
 end
 
