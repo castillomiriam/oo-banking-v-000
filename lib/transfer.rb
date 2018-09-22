@@ -9,6 +9,7 @@ class Transfer
 end
 
 def deposit(money)
+  @balance += money
 end
 
 def display_balance
