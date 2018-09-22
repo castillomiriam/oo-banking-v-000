@@ -8,13 +8,18 @@ def initialize(name, balance = 1000, status = "open")
 @status = status
 end
 
-def valid?
+def deposit(money)
+  @balance += money
 end
 
-def execute_transaction
+def display_balance
+  "Your balance is $#{balance}."
 end
 
-def reverse_transfer
+def  valid?
+end
+
+def close_account
 end
 
 end
