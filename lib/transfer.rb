@@ -21,5 +21,3 @@ def close_account
 end
 
 end
-
-
