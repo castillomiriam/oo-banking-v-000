@@ -13,20 +13,22 @@ def valid?
 end
 
 def execute_transaction
-  if sender.balance < amount
-    @status = "rejected"
-    "Transaction rejected. Please check your account balance."
-  elsif status == "complete"
-    puts "This transaction was already executed."
+   
+   if sender.balance < amount 
+     @status = "rejected"
+     "Transaction rejected. Please check your account balance."
+   elsif status == "complete"
+     puts "This transaction was already executed."
+ 
+   else 
+      @receiver.balance += amount
+      @sender.balance -= amount
+      @status = "complete"
+    end 
+   
+   
+ end 
 
-  else
-if @status == "complete"
-  @status = "reverse"
-  @amount = -(amount)
-  self.execute_transaction
-  @status = "reversed"
-  end
-end
 
 def reverse_transfer
 end
