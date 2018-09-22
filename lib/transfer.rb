@@ -27,12 +27,14 @@ def execute_transaction
     end
 
 
- end 
+ end
 
 
 def reverse_transfer
-  if @status == "complete"
-    @status = "reverse"
-end
-
+  if @status == "complete" || @status == "rejected"
+      @sender.balance += @amount
+      @receiver.balance -= @amount
+      @status = "reversed"
+    end
+  end
 end
